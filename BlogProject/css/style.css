@@ -1,0 +1,131 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 BASE STYLES 
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clear {
+	clear: both;
+}
+
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+     margin: 0 15px 15px 0;
+}
+
+/* Alinhar a direita */
+.alignright{
+     float: right;
+     margin: 0 0 15px 15px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=02 Elements
+-----------------------------------------------------------------------------*/
+
+body {
+     background: url('../images/notebook.png'); 
+     color: #000000;
+     font-family: 'Lato', sans-serif;
+     line-height: 1.7; 
+     font-size: 100%;
+} 
+
+p{
+     margin: 0;
+}
+
+h1{
+     margin-bottom: 0;
+}
+
+h2{
+     margin: 0;
+}
+
+h3{
+     font-size: medium;
+}
+
+a{
+     color: orange;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+/*----------------------------------------------------------------------------- 
+=03 Classes 
+-----------------------------------------------------------------------------*/
+
+.quote{
+     font-size: medium;
+     font-style: italic;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.redondo{
+     border-radius: 50%;
+}
+
+.espaço{
+     margin-top: 40px;
+}
+
+.colado{
+     margin: -10px 0 10px 0;
+     font-size: smaller;
+}
+
+.gray{
+     color: gray;
+}
+
+/*----------------------------------------------------------------------------- 
+=04 Ids 
+-----------------------------------------------------------------------------*/
+
+#container{
+     width: 900px;
+     margin: 0 auto 0 auto;
+     /*background-color: red;*/ 
+}
+
+#main{
+     width: 580px;
+     background-color: white;
+     padding: 20px;
+     float: left;
+}
+
+#sidebar{
+     width: 300px;
+     background-color: white;
+     float: right;
+     padding-top: 20px;
+     padding: 15px;
+}
+
+#footer{
+     padding: 15px;
+}
+
+
+
+
+
+
+
