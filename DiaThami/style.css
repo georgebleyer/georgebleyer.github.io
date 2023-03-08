@@ -4,7 +4,8 @@
 
 
 body {
-  background-color: rgb(255, 228, 196);
+  background: url('images/fundolindo.jpg');
+  /*background-color: rgb(255, 228, 196);*/
   font-family: 'Open Sans', arial, sans-serif;
 
   /* Full Page Background Receipe */
