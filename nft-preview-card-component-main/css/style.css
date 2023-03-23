@@ -1,0 +1,169 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+BASE STYLE
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clear {
+	clear: both;
+}
+
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+}
+
+/* Alinhar a direita */
+.alignright{
+     float: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+
+/*----------------------------------------------------------------------------- 
+ ELEMENTS
+-----------------------------------------------------------------------------*/
+h1{
+     color: white;
+     font-family: 'Outfit', sans-serif;
+     font-weight: 600;
+     font-size: 16px;
+}
+p{
+     color: hsl(215, 51%, 70%);
+     font-family: 'Outfit', sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+     margin: 0;
+}
+h4{
+     color: hsl(178, 100%, 50%);
+     font-family: 'Outfit', sans-serif;
+     font-weight: 400;
+     font-size: 14px;
+     margin: 0;
+}
+h5{
+     color: hsl(215, 51%, 70%);
+     font-family: 'Outfit', sans-serif;
+     font-weight: 300;
+     margin: 0;
+     padding: 0;
+     font-size: 14px;
+}
+/*----------------------------------------------------------------------------- 
+body
+-----------------------------------------------------------------------------*/
+body{
+     background-color: hsl(217, 54%, 11%);
+     display: grid;
+     place-items: center;
+     min-height: 100vh;
+}
+/*----------------------------------------------------------------------------- 
+.container
+-----------------------------------------------------------------------------*/
+.container{
+     background-color: hsl(216, 50%, 16%);
+     width: 300px;
+     /* margin: 40px auto; */
+     border-radius: 20px; 
+}
+/*----------------------------------------------------------------------------- 
+.imagemtopo
+-----------------------------------------------------------------------------*/
+.imagemtopo{
+     padding: 20px 20px 0 20px;
+}
+.imagemtopo img{
+     width: 100%;
+     border-radius: 20px;
+}
+.imagemtopo img:hover{
+     background: url('../images/icon-view.svg');
+     border-radius: 20px;
+}
+/*----------------------------------------------------------------------------- 
+.texto
+-----------------------------------------------------------------------------*/
+.texto{
+     width: 100%;
+     padding: 10px 20px 0 20px;
+}
+.texto p{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-bottom: 0;
+}
+/*----------------------------------------------------------------------------- 
+.container2
+-----------------------------------------------------------------------------*/
+.container2{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+}
+
+/*----------------------------------------------------------------------------- 
+.valor
+-----------------------------------------------------------------------------*/
+.valor{
+     float: left;
+     padding: 0 20px 0 20px;
+     margin: 0;
+}
+.valor img{
+     padding-right: 5px;
+}
+/*----------------------------------------------------------------------------- 
+.dias
+-----------------------------------------------------------------------------*/
+.dias{
+     float: left;
+     padding: 0 20px 0 20px;
+}
+.dias img{
+     padding-right: 5px;
+}
+/*----------------------------------------------------------------------------- 
+.creation
+-----------------------------------------------------------------------------*/
+.creation{
+     width: 100%;
+     height: 100%;
+     padding: 0 20px 20px 20px;
+}
+.creation h5{
+     margin-top: -5px;
+     padding-bottom: 15px;
+     opacity: 30%;
+}
+.creation img{
+     width: 30px;
+     border: 1px solid white;
+     border-radius: 50%;
+    
+}
+.creation p{
+     padding: 7px 0 0 15px;
+}
+.creation span{
+     color: white;
+}
+
+
