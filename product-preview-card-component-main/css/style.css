@@ -1,0 +1,186 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+BASE STYLES 
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+     margin: 0 15px 15px 0;
+}
+
+/* Alinhar a direita */
+.alignright{
+     float: right;
+     margin: 0 0 15px 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+h1{
+font-family: 'Fraunces', serif; 
+line-height: 90%;
+padding: 0;
+margin: 0;
+}
+
+p{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+line-height: 150%;
+color: hsl(228, 12%, 48%);
+padding: 0;
+}
+a{
+text-decoration: none;
+color: white;
+}
+body{
+     background-color: hsl(30, 38%, 92%);
+     display: grid;
+     place-items: center;
+     min-height: 100vh;
+}
+/*----------------------------------------------------------------------------- 
+.container
+-----------------------------------------------------------------------------*/
+.container{
+     border-radius: 20px;
+     width: 350px;
+     background-color: white;
+}
+/*----------------------------------------------------------------------------- 
+.imagemtopo
+-----------------------------------------------------------------------------*/
+
+.imagemtopo img{
+     border-radius: 20px 20px 0 0;
+     height: auto;
+     /* margin-top: -10px; */
+     padding-top: -10px;
+     padding-bottom: 0;
+     width: 100%;
+}
+/*----------------------------------------------------------------------------- 
+.texto
+-----------------------------------------------------------------------------*/
+.texto{
+     padding: 0 30px 0 30px;
+}
+/*----------------------------------------------------------------------------- 
+.preco
+-----------------------------------------------------------------------------*/
+.preco{
+     width: 100%;
+     padding: 10px 30px 0 30px;
+}
+.preco h1{
+     color: hsl(158, 36%, 37%);
+}
+.preconormal p{
+     margin: 0;
+}
+
+/*----------------------------------------------------------------------------- 
+.botão
+-----------------------------------------------------------------------------*/
+.button-3 {
+     
+     width: 250px;
+     background-color: hsl(158, 36%, 37%);
+     border: 1px solid hsl(158, 36%, 37%);
+     border-radius: 6px;
+     color: white;
+     cursor: pointer;
+     display: inline-block;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 20px;
+     padding: 6px 16px;
+     text-align: center;
+     margin-left: 50px;
+     margin-top: 10px;
+     margin-bottom: 30px;
+     
+}
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+     box-shadow: none;
+     outline: none;
+}
+   
+.button-3:hover {
+     background-color: #207037;
+}
+   
+.button-3:focus {
+     outline: none;
+}
+   
+.button-3:disabled {
+     background-color: #94d3a2;
+     cursor: default;
+}
+   
+.button-3:active {
+     background-color: #298e46;
+     
+}
+
+
+@media only screen and (min-width: 1060px){
+
+     .container{
+          display: block;
+          height: 370px;
+          width: 550px;
+     }
+
+     .imagemtopo{
+          width: 250px;
+          height: 370px;
+          float: left;
+     }
+     .imagemtopo img{
+          border-radius: 20px 0 0 20px;
+          height: 100%;
+     }
+     .grande{
+          width: 300px;
+          float: left;
+     
+     }
+
+     .button-3{
+          margin-left: 20px;
+          float: left;
+     }
+
+
+
+} 
+
+
+
+
