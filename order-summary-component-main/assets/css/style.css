@@ -1,0 +1,161 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+Base styles
+-----------------------------------------------------------------------------*/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+/* Clear Class */
+.clear {
+	clear: both;
+}
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+     margin: 0 15px 15px 0;
+}
+/* Alinhar a direita */
+.alignright{
+     float: right;
+     margin: 0 0 15px 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+ 
+     --bright-blue: hsl(245, 75%, 52%);
+     --desatureted-blue:hsl(224, 23%, 55%);
+     --dark-blue: hsl(223, 47%, 23%);
+}
+/*----------------------------------------------------------------------------- 
+Elements
+-----------------------------------------------------------------------------*/
+body{
+     background: url('/assets/images/wave-haikei.svg');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     font-family: 'Red Hat Display', sans-serif;
+     display: grid;
+     place-items: center;
+     min-height: 100vh;
+}
+p{
+     color: var(--desatureted-blue);
+}
+h1{
+     color: var(--dark-blue);
+     font-weight: 900;
+     font-size: 1.5em;
+}
+/*----------------------------------------------------------------------------- 
+.container 
+-----------------------------------------------------------------------------*/
+.container{
+     width: 350px;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*----------------------------------------------------------------------------- 
+.imagemtopo
+-----------------------------------------------------------------------------*/
+.imagemtopo{
+     width: 350px;
+}
+.imagemtopo img{
+     width: 100%;
+     border-radius: 20px 20px 0 0;
+}
+/*----------------------------------------------------------------------------- 
+.texto
+-----------------------------------------------------------------------------*/
+.texto h1{
+     text-align: center;
+}
+.texto p{
+     text-align: center;
+     line-height: 170%;
+     font-size: 16px;
+     padding-top: 10px;
+     padding-bottom: 20px;
+}
+/*----------------------------------------------------------------------------- 
+.cobranca
+-----------------------------------------------------------------------------*/
+.cobranca{
+     padding-bottom: 30px;
+}
+.imagemcobranca{
+     float: left;
+     padding-right: 20px;
+}
+.textocobranca{
+     float: left;
+     padding-top: 10px;
+     padding-right: 60px;
+}
+.change{
+     font-size: .8em;
+     float: left;
+     padding-top: 17px;
+}
+.change a{
+     color: var(--bright-blue);
+     font-weight: 700;
+}
+.change a:hover:not(:disabled) {
+     color: hsl(245, 63%, 64%);
+     text-decoration: none;
+}
+/*----------------------------------------------------------------------------- 
+.button
+-----------------------------------------------------------------------------*/
+button{
+     background-color: var(--bright-blue);
+     border: none;
+     padding: 10px 0 10px 0;
+     font-size: .9rem;
+     width: 250px;
+     border-radius: 10px;
+     color: white;
+     cursor: pointer;
+}
+button:active {
+     color: white;
+} 
+button:hover:not(:disabled) {
+     background: hsl(245, 63%, 64%);
+     color: white;
+}
+button:disabled {
+     cursor: auto;
+     color: grey;
+}
+/*----------------------------------------------------------------------------- 
+.cancelorder
+-----------------------------------------------------------------------------*/
+.cancelorder{
+     text-decoration: none;
+     padding-top: 40px;
+     padding-bottom: 40px;
+     font-size: .8em;
+     color: var(--desatureted-blue);
+     font-weight: 700;
+}
+.cancelorder:hover:not(:disabled) {
+     color: var(--dark-blue);
+     font-weight: 900;
+}
