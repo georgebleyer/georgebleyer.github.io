@@ -1,0 +1,155 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+Base styles
+-----------------------------------------------------------------------------*/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+/* Clear Class */
+.clear {
+	clear: both;
+}
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+}
+/* Alinhar a direita */
+.alignright{
+     float: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/*----------------------------------------------------------------------------- 
+elements
+-----------------------------------------------------------------------------*/
+h1{
+     font-weight: 700;
+     font-size: 1.75rem;
+     margin: 0;
+     line-height: 1.3;
+}
+h2{
+     margin: 0;
+}
+p{
+     font-size: 0.8rem;
+     font-weight: 400;
+     opacity: 60%;
+     line-height: 1.75;
+     margin: 0;
+}
+/*----------------------------------------------------------------------------- 
+body
+-----------------------------------------------------------------------------*/
+body{
+     --very-dark-blue: hsl(233, 47%, 7%); /*(main background)*/
+     --dark-desaturated-blue: hsl(244, 38%, 16%); /*(card background)*/
+     --soft-violet: hsl(277, 64%, 61%); /*(accent)*/
+     background-color: var(--very-dark-blue);
+     color: white;
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     font-family: 'Inter', sans-serif;
+}
+
+/*----------------------------------------------------------------------------- 
+main
+-----------------------------------------------------------------------------*/
+main{
+     background-color: var(--dark-desaturated-blue);
+     width: 350px;
+     border-radius: 10px;
+     height: auto;
+}
+/*----------------------------------------------------------------------------- 
+main
+-----------------------------------------------------------------------------*/
+picture{
+     display: block;
+     width: 350px;
+     height: 250px;
+     border-radius: 10px 10px 0 0;
+     background: url("../images/image-header-mobile.jpg");
+     background-color: var(--soft-violet);
+     background-blend-mode: multiply;
+}
+/*----------------------------------------------------------------------------- 
+.texto
+-----------------------------------------------------------------------------*/
+.texto{
+     width: 350px;
+     padding: 40px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+}
+.texto h1{
+     padding-bottom: 20px;
+}
+.texto span{
+     color: var(--soft-violet);
+}
+.espaco{
+     padding-bottom: 30px;
+}
+.dados{
+     width: 300px;
+     height: 175px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+}
+.dados p{
+     font-size: 0.55rem;
+     opacity: 50%;
+}
+
+@media only screen and (min-width: 900px) {
+
+     main{
+          width: 900px;
+     }
+     picture{
+          float: right;
+          width: 450px;
+          height: 400px;
+          background: url("../images/image-header-desktop.jpg");
+          background-color: var(--soft-violet);
+          background-blend-mode: multiply;
+          border-radius: 0 10px 10px 0;
+     }
+     .texto{
+          float: left;
+          width: 450px;
+          padding: 50px;
+          text-align: left;
+     }
+     .texto h1{
+          padding-bottom: 40px;
+     }
+     .espaco{
+          padding-bottom: 60px;
+     }
+     .dados{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: auto;
+     }
+
+}
