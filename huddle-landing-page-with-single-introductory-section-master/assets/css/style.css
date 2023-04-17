@@ -1,0 +1,169 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+Base styles
+-----------------------------------------------------------------------------*/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     --Violet: hsl(257, 40%, 49%);
+     --Soft-Magenta: hsl(300, 69%, 71%);
+}
+/* Clear Class */
+.clear {
+	clear: both;
+}
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+     margin: 0 15px 15px 0;
+}
+/* Alinhar a direita */
+.alignright{
+     float: right;
+     margin: 0 0 15px 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/*----------------------------------------------------------------------------- 
+elements
+-----------------------------------------------------------------------------*/
+h1{
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     font-size: 2.5rem;
+}
+p{
+     font-family: 'Open Sans', sans-serif;
+}
+/*----------------------------------------------------------------------------- 
+body
+-----------------------------------------------------------------------------*/
+body{
+     background: url("../images/bg-desktop.svg");
+     background-color: var(--Violet);
+     background-size: cover; 
+     background-position: center;
+     background-attachment: fixed; 
+     color: white;
+      
+}
+/*----------------------------------------------------------------------------- 
+header
+-----------------------------------------------------------------------------*/
+header{
+     padding: 30px 50px 40px 50px;
+}
+header img{
+     width: 200px;
+}
+/*----------------------------------------------------------------------------- 
+.principal
+-----------------------------------------------------------------------------*/
+.principal{
+     padding-left: 50px;
+     display: flex;
+}
+.principal img{
+     width: 600px;
+}
+.texto{
+     padding-left: 50px;
+     padding-right: 50px;
+     display: flex;
+     flex-direction: column;
+
+}
+.texto h1{
+     padding-right: 100px;
+     line-height: 1.3;
+     padding-bottom: 30px;
+}
+.texto p{
+     font-size: 1rem;
+     padding-right: 60px;
+     line-height: 1.8;
+     opacity: 80%;
+     padding-bottom: 30px;
+}
+button {
+     padding: 12.5px 30px;
+     width: 180px;
+     height: 50px;
+     font-size: 1rem;
+     border: 0;
+     border-radius: 100px;
+     background-color: white;
+     color: var(--Violet);
+     transition: all 0.5s;
+     -webkit-transition: all 0.5s;
+     cursor: pointer;
+}
+   
+button:hover {
+     background-color: var(--Soft-Magenta);
+     color: white;
+     box-shadow: 0 0 20px #6fc5ff50;
+}
+   
+button:active {
+     background-color: #3d94cf;
+     transition: all 0.25s;
+     -webkit-transition: all 0.25s;
+     box-shadow: none;
+}
+/*----------------------------------------------------------------------------- 
+footer
+-----------------------------------------------------------------------------*/
+footer{
+     display: flex;
+     justify-content: flex-end;
+     padding: 0 60px 20px 0;
+     gap: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+     main{
+          display: flex;
+          flex-direction: column;
+          place-items: center;
+          justify-content: center;
+          min-height: 100vh;
+     }
+     .principal{
+          flex-direction: column;
+          place-content: center;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          padding: 0;
+          width: 80%;
+     }
+     .principal h1{
+          padding-right: 0;
+          font-size: 1.5rem;
+          padding-top: 40px;
+     }
+     .principal p{
+          padding-right: 0;
+     }
+     .principal img{
+          width: 80%;
+     }
+     footer{
+          padding: 40px 0;
+     }
+     button{
+          width: 250px;
+          height: 40px;
+     }
+
+}
