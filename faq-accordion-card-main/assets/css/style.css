@@ -1,0 +1,186 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+Base styles
+-----------------------------------------------------------------------------*/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+/* Clear Class */
+.clear {
+	clear: both;
+}
+/* Alinhar a esquerda */
+.alignleft{
+     float: left;
+     margin: 0 15px 15px 0;
+}
+/* Alinhar a direita */
+.alignright{
+     float: right;
+     margin: 0 0 15px 15px;
+}
+.padding0{
+     padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*----------------------------------------------------------------------------- 
+:root
+-----------------------------------------------------------------------------*/
+:root{
+
+     /* #### Text */
+     --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+     --soft-red: hsl(14, 88%, 65%);
+     --very-dark-grayish-blue: hsl(237, 12%, 33%);
+     --dark-grayish-blue: hsl(240, 6%, 50%);
+     /* #### Gradient */
+     /* Background gradient: */
+     --soft-violet: hsl(273, 75%, 66%);
+     --soft-blue: hsl(240, 73%, 65%);
+     /* #### Dividers */
+     --light-grayish-blue: hsl(240, 5%, 91%);
+     font-family: 'Kumbh Sans', sans-serif;
+
+}
+/*----------------------------------------------------------------------------- 
+elements
+-----------------------------------------------------------------------------*/
+h1{
+     text-align: center;
+     font-weight: 700;
+     padding-bottom: 30px;
+}
+p{
+     margin: 0;
+}
+p:hover{
+     color: var(--soft-red);
+     cursor: pointer;
+}
+
+span{
+     color: var(--dark-grayish-blue);
+}
+/*----------------------------------------------------------------------------- 
+body
+-----------------------------------------------------------------------------*/
+body{
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+/*----------------------------------------------------------------------------- 
+main
+-----------------------------------------------------------------------------*/
+main{
+     width: 90%;
+     background-color: white;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     justify-content: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+/*----------------------------------------------------------------------------- 
+.faq
+-----------------------------------------------------------------------------*/
+.faq{
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     justify-content: center; 
+     width: 100%;
+}
+.faqgeral{
+     width: 100%;
+     padding: 30px;
+     padding-top: 0;
+}
+.faq1{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     gap: 35px;
+}
+.faq2{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 20px;
+     width: 100%;
+     gap: 35px;
+}
+.faq3{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 20px;
+     width: 100%;
+     gap: 35px;
+}
+.faq4{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 20px;
+     width: 100%;
+     gap: 35px;
+}
+.faq5{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-top: 20px;
+     width: 100%;
+     gap: 35px;
+}
+.logo{
+     background: url("../images/illustration-woman-online-mobile.svg");
+     width: 250px;
+     height: 200px;
+     background-repeat: no-repeat;
+     margin-top: -110px;
+}
+
+@media only screen and (min-width: 800px) {
+
+     main{
+          width: 70%;
+     }
+     h1{
+          padding-top: 30px;
+     }
+     .faqgeral{
+          
+          padding-left: 60px;
+          padding-bottom: 60px;
+     }
+     .faq{
+          flex-direction: row;
+     }
+     .logo{
+          
+          margin: 0;
+          width: 500px;
+          height: 250px;
+          background-repeat: no-repeat;
+          margin-left: -50px;
+
+     }
+}
