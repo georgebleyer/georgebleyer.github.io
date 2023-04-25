@@ -1,0 +1,143 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+Base styles
+-----------------------------------------------------------------------------*/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+:root{
+     --Cyan: hsl(179, 62%, 43%);
+     --Bright-Yellow: hsl(71, 73%, 54%);
+     --Light-Gray: hsl(204, 43%, 93%);
+     --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+/*----------------------------------------------------------------------------- 
+Elements
+-----------------------------------------------------------------------------*/
+h1{
+     font-weight: 700;
+     font-size: 18px;
+}
+h2{
+     font-size: 16px;
+}
+p{
+     font-size: 14px;
+     margin-bottom: 0;
+}
+/*----------------------------------------------------------------------------- 
+body
+-----------------------------------------------------------------------------*/
+body{
+     font-family: 'Karla', sans-serif;
+     background: var(--Light-Gray);
+     display: flex;
+     flex-direction: column;
+     place-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+/*----------------------------------------------------------------------------- 
+main
+-----------------------------------------------------------------------------*/
+main{
+     width: 80%;
+}
+/*----------------------------------------------------------------------------- 
+.card1
+-----------------------------------------------------------------------------*/
+.card1{
+     border-radius: 10px 10px 0 0;
+     padding: 30px;
+     background: white;
+     height: auto;
+}
+.card1 h1{
+     color: var(--Cyan);
+     padding-bottom: 10px;
+}
+.card1 h2{
+     color: var(--Bright-Yellow);
+     font-weight: 700;
+     padding-bottom: 10px;
+}
+.card1 p{
+     color: var(--Grayish-Blue);
+     text-align: justify;
+}
+/*----------------------------------------------------------------------------- 
+.card2
+-----------------------------------------------------------------------------*/
+.card2{
+     color: white;
+     padding: 30px;
+     background: #2bb3b1;
+}
+.card2 h2{
+     padding-bottom: 10px;
+}
+.card2 h1{
+     font-size: 30px;
+}
+.card2 span{
+     font-size: 14px;
+     color: white;
+     opacity: 50%;
+}
+.card2 p{
+     padding-bottom: 20px;
+}
+button {
+     color: white;
+     width: 100%;
+     padding: 0.4em 1.7em;
+     font-size: 18px;
+     border-radius: 0.2em;
+     background: var(--Bright-Yellow);
+     border: none;
+     transition: all .3s;
+}
+/*----------------------------------------------------------------------------- 
+.card3
+-----------------------------------------------------------------------------*/
+.card3{
+     color: white;
+     padding: 30px;
+     background: #4abebd;
+     border-radius: 0 0 10px 10px;
+}
+.card3 h2{
+     font-weight: 700;
+     padding-bottom: 10px;
+}
+.card3 p{
+     opacity: 50%;
+}
+
+@media only screen and (min-width: 500px) {
+     
+     main{
+          width: 50%;
+     }
+     .card23{
+          display: flex;
+     }
+     .card2{
+          width: 50%;
+          border-radius: 0 0 0 10px;
+     }
+     .card3{
+          width: 50%;
+          border-radius: 0 0 10px 0;
+     }
+
+}
