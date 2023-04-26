@@ -1,0 +1,79 @@
+/*
+Nome do projeto: 
+Autor: George Bleyer
+Desenvolvido por: @georgebleyer
+*/
+
+/*----------------------------------------------------------------------------- 
+Base styles
+-----------------------------------------------------------------------------*/
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+:root{
+     --Almost-White: hsl(0, 0%, 98%);
+     --Medium-Gray: hsl(0, 0%, 41%);
+     --Almost-Black: hsl(0, 0%, 8%);
+     font-family: 'Epilogue', sans-serif;
+}
+/*----------------------------------------------------------------------------- 
+elements
+-----------------------------------------------------------------------------*/
+h1{
+     font-size: 4rem;
+     font-weight: 700;
+     padding-bottom: 30px;
+}
+p{
+     padding-bottom: 20px;
+}
+/*----------------------------------------------------------------------------- 
+main
+-----------------------------------------------------------------------------*/
+main{
+     display: flex;
+     padding: 50px;
+}
+/*----------------------------------------------------------------------------- 
+.centro
+-----------------------------------------------------------------------------*/
+.centro{
+     padding: 40px 200px 0 40px;
+}
+/*----------------------------------------------------------------------------- 
+.home
+-----------------------------------------------------------------------------*/
+.home{
+     background: url("../images/image-hero-desktop.png");
+     width: 800px;
+     height: 450px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px) {
+
+     h1{
+          font-size: 3.6rem;
+     }
+     main{
+          display: flex;
+          flex-direction: column-reverse;
+          padding: 10px 0 10px 0;
+          
+     }
+     .centro{
+          width: 100%;
+          padding: 40px;
+     }
+     .home{
+          background: url("../images/image-hero-mobile.png");
+          width: 800px;
+          height: 450px;
+     }
+
+}
