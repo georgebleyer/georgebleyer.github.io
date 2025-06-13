@@ -26,6 +26,16 @@ window.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => openApp(btn.dataset.app));
   });
   document.getElementById('close-modal').addEventListener('click', closeModal);
+  document.getElementById('modal').addEventListener('click', (e) => {
+    if (e.target.id === 'modal') {
+      closeModal();
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
   document.getElementById('analyze').addEventListener('click', () => {
     window.location.href = 'results.html';
   });
