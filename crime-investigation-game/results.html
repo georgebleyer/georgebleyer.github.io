@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conclusão do Caso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="end">
+  <div class="container">
+    <h1>Conclusão</h1>
+    <p id="final-text">Obrigado por jogar.</p>
+    <div class="choices">
+      <button onclick="showEnding('denunciar')">Denunciar</button>
+      <button onclick="showEnding('proteger')">Proteger</button>
+      <button onclick="showEnding('encobrir')">Encobrir</button>
+    </div>
+    <p id="ending" class="ending"></p>
+  </div>
+  <script>
+    function showEnding(choice) {
+      const endings = {
+        denunciar: 'Você denunciou o culpado às autoridades e justiça foi feita.',
+        proteger: 'Você decidiu proteger alguém envolvido e o mistério continua.',
+        encobrir: 'Você encobriu o crime e carregará esse segredo para sempre.'
+      };
+      document.getElementById('ending').innerText = endings[choice];
+    }
+  </script>
+</body>
+</html>
